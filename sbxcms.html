@@ -1,0 +1,18 @@
+<head>
+  <title>Starbucks CMS</title>
+</head>
+
+<body>
+  <h1>Content Managment System Starbucks</h1>
+
+  {{> leaderboard}}
+</body>
+
+<template name="leaderboard">
+ <ul>
+   {{#each players}}
+   <li class="player {{selectedClass}}">{{name}}: {{score}}</li>
+   {{/each}}
+ </ul>
+
+</template>
